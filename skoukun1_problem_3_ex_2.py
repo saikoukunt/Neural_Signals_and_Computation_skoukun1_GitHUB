@@ -144,8 +144,8 @@ def p3_part_D(pred_all_pca):
     plt.title("First two dynamical PCs for all trials/conditions")
 
 
-def p3_part_E(data, A_hat_pca):
-    datas, times = load_churchland_data("./exampleData.mat")
+def p3_part_E(filepath, data, A_hat_pca):
+    datas, times = load_churchland_data(filepath)
 
     jpca = jPCA.JPCA(num_jpcs=6)
 
